@@ -1,4 +1,7 @@
 #!/bin/sh
+#----------------------------
+mkdir moode_non_modif
+cp -r /var/local/www/header.php /moode_non_modif
 
 #----------------------------
 
@@ -10,8 +13,8 @@ cp parametre_control.php /var/www/
 cp header.php /var/local/www/
 cp index.js /var/www/js/
 mkdir script 
-cp serial1.py /script/
-cp I2c.py /script/
+cp serial1.py script/
+cp I2c.py script/
 mv script /var/www/
 cp cfg-BTN-sqlite3.db /var/local/www/db/
 chown 0:50 cfg-BTN-sqlite3.db /var/local/www/db/
