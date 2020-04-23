@@ -1,7 +1,7 @@
 #!/bin/sh
 #----------------------------
 mkdir moode_non_modif
-cp -r /var/local/www/header.php /moode_non_modif
+cp /var/local/www/header.php /moode_non_modif/header.php
 
 #----------------------------
 
