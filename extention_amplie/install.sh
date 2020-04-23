@@ -14,7 +14,7 @@ cp serial1.py /script/
 cp I2c.py /script/
 mv script /var/www/
 cp cfg-BTN-sqlite3.db /var/local/www/db/
-chown 0:50 cfg-BTN-sqlite3.db
-chomod 777 cfg-BTN-sqlite3.db
+chown 0:50 cfg-BTN-sqlite3.db /var/local/www/db/
+chmod 777 cfg-BTN-sqlite3.db /var/local/www/db/
 
 
