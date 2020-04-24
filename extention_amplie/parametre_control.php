@@ -83,7 +83,16 @@ eval("echoTemplate(\"".getTemplate("/var/www/indx/$tpl")."\");");
 <body >
     <br>
     <div class="tab-content sidenav" style=" height: auto;" > <!--Menu-->
-
+    <div id="menu-top" class="ui-header ui-bar-f ui-header-fixed slidedown" data-position="fixed" data-role="header" role="banner">
+    <div class="dropdown">
+			<a aria-label="Menu" class="dropdown-toggle btn" id="menu-settings" role="button" data-toggle="dropdown" data-target="#" href="#notarget">m</a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="menu-settings">
+					<li class="context-menu menu-separator"><a href="javascript:location.reload(true); void 0"><i class="fas fa-redo sx"></i> Refresh</a></li>
+					<li><a href="#restart-modal" data-toggle="modal"><i class="fas fa-power-off sx"></i> Restart</a></li>
+					
+			</ul>
+		</div>
+    </div>
         <div class="container-fluid">
             <div class="col-sm-4 sidenav container-fluid">
                 <ul class="nav nav-pills nav-stacked">
@@ -92,7 +101,9 @@ eval("echoTemplate(\"".getTemplate("/var/www/indx/$tpl")."\");");
                     <li class="active" style="padding-right: 10px;"><a href="/parametre_control.php">Parametre</a></li>
                 </ul><br>
             </div>
+         
         </div>
+        
         
     <div class="col-sm-12 table-responsive " style="width: 100%;  height: 400px;" ><!--Tableau-->
             <table class="table table-dark table-hover">
@@ -142,6 +153,7 @@ eval("echoTemplate(\"".getTemplate("/var/www/indx/$tpl")."\");");
         <button aria-label="Previous" class="btn btn-success" style="margin-top: 10px; margin-left: 15px;" onclick="ajouter()">Ajouter</button>
         <button aria-label="Previous" class="btn btn-danger" style="margin-top: 10px;" onclick="supp()">Supprimer</button>
         <button aria-label="Previous" class="btn btn-warning text-dark" style="margin-top: 10px;" onclick="modif()">Modifier</button>
+        <button aria-label="Previous" class="btn btn-success" style="margin-top: 10px;" onclick="fermer()">Fermer</button>
 
     <form method="post" action style=" height: 80%;">
         <?php

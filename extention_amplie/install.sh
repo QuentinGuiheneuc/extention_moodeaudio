@@ -1,7 +1,7 @@
 #!/bin/sh
 #----------------------------
 mkdir moode_non_modif
-cp /var/local/www/header.php /moode_non_modif/header.php
+cp /var/local/www/header.php /moode_non_modif/
 
 #----------------------------
 
@@ -19,5 +19,3 @@ mv script /var/www/
 cp cfg-BTN-sqlite3.db /var/local/www/db/
 chown 0:50 cfg-BTN-sqlite3.db /var/local/www/db/
 chmod 777 cfg-BTN-sqlite3.db /var/local/www/db/
-
-

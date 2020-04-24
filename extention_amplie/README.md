@@ -1,5 +1,7 @@
 ### TUTO INSTALL
 
+##### Moode Audio version conpatible 6.4.2
+
 ```
 sudo raspi-config
 ```
@@ -18,22 +20,38 @@ Puis :
 reboot
 ```
 
-Une fois que le Rasberry Pi à redémarre faite l'etape suivante
+Une fois que le Rasberry Pi à redémarre faite les l'etapes suivante :
 
-```
-git clone https://github.com/QuentinGuiheneuc/extention_moodeaudio.git
-```
+- instalation.
 
-```
-cd /extention_moodeaudio/extention_amplie/
-```
+  ```
+  git clone https://github.com/QuentinGuiheneuc/extention_moodeaudio.git
+  ```
 
-```
-chmod +x install.sh
-```
+  ```
+  cd /extention_moodeaudio/extention_amplie/
+  ```
 
-```
-sudo ./install.sh
-```
+  ```
+  chmod +x install.sh
+  ```
+
+  ```
+  sudo ./install.sh
+  ```
+
+- autorisation de lecture de la basse de donner.
+
+  ```
+  cd /var/local/www/db/
+  ```
+
+  ```
+  chown 0:50 cfg-BTN-sqlite3.db
+  ```
+
+  ```
+  chmod 777 cfg-BTN-sqlite3.db
+  ```
 
 TERMINER

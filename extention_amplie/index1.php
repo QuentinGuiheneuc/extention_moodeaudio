@@ -1,4 +1,28 @@
-<!DOCTYPE html>
+<!--/**
+ * moOde audio player (C) 2014 Tim Curtis
+ * http://moodeaudio.org
+ *
+ * tsunamp player ui (C) 2013 Andrea Coiutti & Simone De Gregori
+ * http://www.tsunamp.com
+ *
+ * This Program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3, or (at your option)
+ * any later version.
+ *
+ * This Program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * 2019-04-12 TC moOde 5.0
+ * modifier par quentin guiheneuc
+ *
+ */-->
+ <!DOCTYPE html>
 <html> 
 <head>
     <!--l'en-tête-->
@@ -53,30 +77,7 @@
 </head>
 
 <?php 
-/**
- * moOde audio player (C) 2014 Tim Curtis
- * http://moodeaudio.org
- *
- * tsunamp player ui (C) 2013 Andrea Coiutti & Simone De Gregori
- * http://www.tsunamp.com
- *
- * This Program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 3, or (at your option)
- * any later version.
- *
- * This Program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- * 2019-04-12 TC moOde 5.0
- * modifier par quentin guiheneuc
- *
- */
+
 $pdo;
 require_once dirname(__FILE__) . '/inc/playerlib.php';
 
@@ -102,6 +103,16 @@ eval("echoTemplate(\"".getTemplate("/var/www/indx/$tpl")."\");");
 
 
 <div class="tab-content -webkit-full-screen" style=" height: 730px;">
+   <div id="menu-top" class="ui-header ui-bar-f ui-header-fixed slidedown" data-position="fixed" data-role="header" role="banner">
+   <div class="dropdown">
+			<a aria-label="Menu" class="dropdown-toggle btn" id="menu-settings" role="button" data-toggle="dropdown" data-target="#" href="#notarget">m</a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="menu-settings">
+					<li class="context-menu menu-separator"><a href="javascript:location.reload(true); void 0"><i class="fas fa-redo sx"></i> Refresh</a></li>
+					<li><a href="#restart-modal" data-toggle="modal"><i class="fas fa-power-off sx"></i> Restart</a></li>
+					
+			</ul>
+		</div>
+    </div>
 <div class="container-fluid">
 	<div class="col-sm-4 sidenav container-fluid">
       	<ul class="nav nav-pills nav-stacked">
