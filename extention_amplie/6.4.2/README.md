@@ -29,7 +29,7 @@ Une fois que le Rasberry Pi à redémarre faite les l'etapes suivante :
   ```
 
   ```
-  cd /extention_moodeaudio/extention_amplie/
+  cd /extention_moodeaudio/extention_amplie/6.4.2/
   ```
 
   ```

@@ -158,10 +158,10 @@ eval("echoTemplate(\"".getTemplate("/var/www/indx/$tpl")."\");");
     <form method="post" action style=" height: 80%;">
         <?php
             
-                     $ndb;
-                     $nds;
-                     $aa;
-                     $usb;
+                     $ndb = null;
+                     $nds = null;
+                     $aa = null;
+                     $usb = null;
                      $usb1=".";
                      $vi =0;
                      
